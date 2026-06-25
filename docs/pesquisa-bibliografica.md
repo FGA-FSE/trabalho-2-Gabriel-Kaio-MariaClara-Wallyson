@@ -204,7 +204,7 @@ Representa o **estado da arte de produtos IoT embarcados multi-sensor**, onde o 
 
 ---
 
-## 4.4 Referências (formato ABNT)
+## 4.4 Referências 
 
 **[T1]** SUNARDI; YUDHANA, Anton; FURIZAL. Tsukamoto Fuzzy Inference System on Internet of Things-Based for Room Temperature and Humidity Control. **IEEE Access**, v. 11, 2023. DOI: [10.1109/ACCESS.2023.3240093](https://doi.org/10.1109/ACCESS.2023.3240093). Disponível em: https://ieeexplore.ieee.org/document/10015014.
 
