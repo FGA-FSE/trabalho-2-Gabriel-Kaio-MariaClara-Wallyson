@@ -9,10 +9,10 @@ const config: Config = {
   favicon: 'img/favicon.ico',
 
   url: 'https://fga-fse.github.io',
-  baseUrl: '/trabalho-2-Gabriel-Kayo-MariaClara-Wallyson/',
+  baseUrl: '/trabalho-2-Gabriel-Kaio-MariaClara-Wallyson/',
 
   organizationName: 'FGA-FSE',
-  projectName: 'trabalho-2-Gabriel-Kayo-MariaClara-Wallyson',
+  projectName: 'trabalho-2-Gabriel-Kaio-MariaClara-Wallyson',
 
   onBrokenLinks: 'throw',
   onBrokenMarkdownLinks: 'warn',
@@ -55,7 +55,7 @@ const config: Config = {
           position: 'left',
         },
         {
-          href: 'https://github.com/FGA-FSE/trabalho-2-Gabriel-Kayo-MariaClara-Wallyson',
+          href: 'https://github.com/FGA-FSE/trabalho-2-Gabriel-Kaio-MariaClara-Wallyson',
           label: 'GitHub',
           position: 'right',
         },
