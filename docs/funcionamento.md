@@ -146,7 +146,7 @@ A separação entre os barramentos de potência e sinal minimiza interferências
 
 ## Histórico de Versões
 
-<font size="3"><p style="text-align: left">**Tabela 1** - Histórico de versões.</p></font>
+<font size="3"><p style={{textAlign: "left"}}>**Tabela 1** - Histórico de versões.</p></font>
 
 | Versão | Descrição | Autor(es) | Data | Revisor | Data de revisão |
 | :----: | :-------: | :-------: | :--: | :-----: | :-------------: |

@@ -41,7 +41,7 @@ A navegação entre os modos **Automático** e **Manual** é feita por um seleto
 
 O protótipo navegável pode ser acessado pelo seguinte link:
 
-<iframe style="border: 1px solid rgba(0, 0, 0, 0.1); display: block; margin: 0 auto;" width="800" height="450" src="https://www.figma.com/proto/2k8TpvARyq0MmV2ibipGOG/Embarcados?page-id=0%3A1&node-id=3-34&p=f&viewport=456%2C468%2C0.37&t=YSa6C8cXv9V4IlLl-1&scaling=min-zoom&content-scaling=fixed&starting-point-node-id=3%3A34" allowfullscreen></iframe>
+<iframe style={{border: "1px solid rgba(0, 0, 0, 0.1)", display: "block", margin: "0 auto"}} width="800" height="450" src="https://www.figma.com/proto/2k8TpvARyq0MmV2ibipGOG/Embarcados?page-id=0%3A1&node-id=3-34&p=f&viewport=456%2C468%2C0.37&t=YSa6C8cXv9V4IlLl-1&scaling=min-zoom&content-scaling=fixed&starting-point-node-id=3%3A34" allowfullscreen></iframe>
 
 No contexto do sistema de irrigação, esse protótipo representa:
 
@@ -269,7 +269,7 @@ Quando a conexão é restabelecida, os valores voltam a ser preenchidos a partir
 
 ## Histórico de Versões
 
-<font size="3"><p style="text-align: left">**Tabela 1** - Histórico de versões.</p></font>
+<font size="3"><p style={{textAlign: "left"}}>**Tabela 1** - Histórico de versões.</p></font>
 
 | Versão | Descrição | Autor(es) | Data | Revisor | Data de revisão |
 | :----: | :-------: | :-------: | :--: | :-----: | :-------------: |

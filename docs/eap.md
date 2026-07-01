@@ -56,7 +56,7 @@ graph TD
 
 ## Histórico de Versões
 
-<font size="3"><p style="text-align: left">**Tabela 1** - Histórico de versões.</p></font>
+<font size="3"><p style={{textAlign: "left"}}>**Tabela 1** - Histórico de versões.</p></font>
 
 | Versão | Descrição | Autor(es) | Data | Revisor | Data de revisão |
 | :----: | :-------: | :-------: | :--: | :-----: | :-------------: |

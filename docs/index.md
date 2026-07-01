@@ -107,7 +107,7 @@ O ESP32 atua como unidade de controle, acionando uma mini bomba DC e disponibili
 
 ## Equipe
 
-<div style="display: flex; flex-wrap: wrap; justify-content: center; gap: 15px;">
+<div style={{display: "flex", flexWrap: "wrap", justifyContent: "center", gap: "15px"}}>
 
   <div class="photo-card leader">
     <a href="https://github.com/GabrielSMonteiro" target="_blank">
