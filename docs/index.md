@@ -111,29 +111,29 @@ O ESP32 atua como unidade de controle, acionando uma mini bomba DC e disponibili
 
   <div class="photo-card leader">
     <a href="https://github.com/GabrielSMonteiro" target="_blank">
-      <img src="https://avatars.githubusercontent.com/u/100171830?v=4">
-      <h4>Gabriel Monteiro<br><small>Responsável Software / Web</small></h4>
+      <img src="https://avatars.githubusercontent.com/u/100171830?v=4" />
+      <h4>Gabriel Monteiro<br/><small>Responsável Software / Web</small></h4>
     </a>
   </div>
 
   <div class="photo-card">
     <a href="https://github.com/bigkaio" target="_blank">
-      <img src="https://avatars.githubusercontent.com/u/121952063?v=4">
-      <h4>Kaio<br><small>Pesquisa Bibliográfica</small></h4>
+      <img src="https://avatars.githubusercontent.com/u/121952063?v=4" />
+      <h4>Kaio<br/><small>Pesquisa Bibliográfica</small></h4>
     </a>
   </div>
 
   <div class="photo-card">
     <a href="https://github.com/alvezclari" target="_blank">
-      <img src="https://avatars.githubusercontent.com/u/145598542?v=4">
-      <h4>Maria Clara<br><small>Descrição / Comparativo</small></h4>
+      <img src="https://avatars.githubusercontent.com/u/145598542?v=4" />
+      <h4>Maria Clara<br/><small>Descrição / Comparativo</small></h4>
     </a>
   </div>
 
   <div class="photo-card">
     <a href="https://github.com/devwallyson" target="_blank">
-      <img src="https://avatars.githubusercontent.com/u/120031974?v=4">
-      <h4>Wallyson<br><small>Análise Técnica</small></h4>
+      <img src="https://avatars.githubusercontent.com/u/120031974?v=4" />
+      <h4>Wallyson<br/><small>Análise Técnica</small></h4>
     </a>
   </div>
 
@@ -146,8 +146,8 @@ O ESP32 atua como unidade de controle, acionando uma mini bomba DC e disponibili
 ## Tecnologias Utilizadas
 
 <div class="badges">
-  <img src="https://img.shields.io/badge/Hardware-ESP32-blue?style=for-the-badge" alt="ESP32">
-  <img src="https://img.shields.io/badge/Sensores-Umidade%20Solo%20%7C%20DHT11%20%7C%20Boia-orange?style=for-the-badge" alt="Sensores">
-  <img src="https://img.shields.io/badge/Comunicação-Wi--Fi%20%7C%20Telegram%20Bot%20%7C%20HTTP-lightgrey?style=for-the-badge" alt="Comunicação">
-  <img src="https://img.shields.io/badge/Docs-Markdown%20%7C%20Docusaurus-purple?style=for-the-badge" alt="Docs">
+  <img src="https://img.shields.io/badge/Hardware-ESP32-blue?style=for-the-badge" alt="ESP32" />
+  <img src="https://img.shields.io/badge/Sensores-Umidade%20Solo%20%7C%20DHT11%20%7C%20Boia-orange?style=for-the-badge" alt="Sensores" />
+  <img src="https://img.shields.io/badge/Comunicação-Wi--Fi%20%7C%20Telegram%20Bot%20%7C%20HTTP-lightgrey?style=for-the-badge" alt="Comunicação" />
+  <img src="https://img.shields.io/badge/Docs-Markdown%20%7C%20Docusaurus-purple?style=for-the-badge" alt="Docs" />
 </div>
