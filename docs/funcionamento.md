@@ -1,4 +1,4 @@
-# Funcionamento Técnico do Sistema
+# 2. Funcionamento Técnico do Sistema
 
 ## Introdução
 
@@ -148,6 +148,6 @@ A separação entre os barramentos de potência e sinal minimiza interferências
 
 <font size="3"><p style={{textAlign: "left"}}>**Tabela 1** - Histórico de versões.</p></font>
 
-| Versão | Descrição | Autor(es) | Data | Revisor | Data de revisão |
-| :----: | :-------: | :-------: | :--: | :-----: | :-------------: |
-|  1.0   | Criação do documento de funcionamento técnico | [Gabriel Santos Monteiro](https://github.com/GabrielSMonteiro) | 30/06/2026 |  |  |
+| Versão | Descrição | Autor(es) | Data |
+| :----: | :-------: | :-------: | :--: |
+|  1.0   | Criação do documento de funcionamento técnico | [Gabriel Santos Monteiro](https://github.com/GabrielSMonteiro) | 30/06/2026 |

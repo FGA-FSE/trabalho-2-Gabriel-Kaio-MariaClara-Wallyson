@@ -150,6 +150,6 @@ A análise de riscos permite antecipar problemas e orientar o desenvolvimento do
 
 <font size="3"><p style={{textAlign: "left"}}>**Tabela 1** - Histórico de versões.</p></font>
 
-| Versão | Descrição | Autor(es) | Data | Revisor | Data de revisão |
-| :----: | :-------: | :-------: | :--: | :-----: | :-------------: |
-|  1.0   | Criação do documento (análise de riscos do sistema de irrigação) | [Gabriel Santos Monteiro](https://github.com/GabrielSMonteiro) | 30/06/2026 |  |  |
+| Versão | Descrição | Autor(es) | Data |
+| :----: | :-------: | :-------: | :--: |
+|  1.0   | Criação do documento (análise de riscos do sistema de irrigação) | [Gabriel Santos Monteiro](https://github.com/GabrielSMonteiro) | 30/06/2026 |
