@@ -1,4 +1,4 @@
-## 3. Proposta de reprodução com ESP32
+# 3. Proposta de Reprodução (ESP32)
 
 ### 3.1 Visão geral da solução
 
