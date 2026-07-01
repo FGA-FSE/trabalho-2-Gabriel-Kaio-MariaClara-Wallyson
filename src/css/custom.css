@@ -28,3 +28,88 @@
   --ifm-color-primary-lightest: #4fddbf;
   --docusaurus-highlighted-code-line-bg: rgba(0, 0, 0, 0.3);
 }
+
+/* Styles extracted from index.md and analiseriscos.md */
+.photo-card {
+    width: 130px;
+    text-align: center;
+    padding: 15px;
+    background-color: rgba(255, 255, 255, 0.9);
+    border: 2px solid #26a646;
+    border-radius: 12px;
+    transition: transform 0.3s, box-shadow 0.3s;
+    box-shadow: 0 2px 5px rgba(0,0,0,0.2);
+}
+
+.leader {
+    border: 3px solid gold !important;
+    box-shadow: 0 0 10px rgba(255,215,0,0.6);
+}
+
+.photo-card:hover {
+    transform: translateY(-5px) scale(1.05);
+    box-shadow: 0 6px 12px rgba(0,0,0,0.3);
+}
+
+.photo-card img {
+    border-radius: 50%;
+    margin-bottom: 10px;
+    width: 80px;
+    height: 80px;
+    object-fit: cover;
+}
+
+.photo-card h4 {
+    margin: 0;
+    color: #000000;
+    font-size: 14px;
+}
+
+.hero {
+    padding: 2rem 0;
+}
+
+.hero-content {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    gap: 2rem;
+    flex-wrap: wrap;
+}
+
+.hero-text {
+    max-width: 640px;
+}
+
+.hero-tag {
+    font-size: 0.9rem;
+    text-transform: uppercase;
+    letter-spacing: 0.08em;
+    color: #888;
+    margin-bottom: 0.5rem;
+}
+
+.hero-description {
+    margin-top: 1rem;
+    max-width: 520px;
+}
+
+.hero-actions {
+    margin-top: 1.5rem;
+    display: flex;
+    gap: 1rem;
+    flex-wrap: wrap;
+}
+
+.hero-image img {
+    border-radius: 12px;
+}
+
+.badges img {
+    margin-right: 8px;
+}
+
+table thead {
+    background-color: #2e7d32;
+    color: white;
+}
