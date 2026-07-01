@@ -41,7 +41,7 @@ A navegação entre os modos **Automático** e **Manual** é feita por um seleto
 
 O protótipo navegável pode ser acessado pelo seguinte link:
 
-<iframe style={{border: "1px solid rgba(0, 0, 0, 0.1)", display: "block", margin: "0 auto"}} width="800" height="450" src="https://www.figma.com/embed?embed_host=share&url=https%3A%2F%2Fwww.figma.com%2Fproto%2F2k8TpvARyq0MmV2ibipGOG%2FEmbarcados%3Fpage-id%3D0%253A1%26node-id%3D3-351%26p%3Df%26viewport%3D456%252C468%252C0.37%26t%3DYSa6C8cXv9V4IlLl-1%26scaling%3Dmin-zoom%26content-scaling%3Dfixed%26starting-point-node-id%3D3%253A34" allowfullscreen></iframe>
+<iframe style={{border: "1px solid rgba(0, 0, 0, 0.1)", display: "block", margin: "0 auto"}} width="100%" height="600" src="https://www.figma.com/embed?embed_host=share&url=https%3A%2F%2Fwww.figma.com%2Fproto%2F2k8TpvARyq0MmV2ibipGOG%2FEmbarcados%3Fpage-id%3D0%253A1%26node-id%3D3-351%26p%3Df%26viewport%3D456%252C468%252C0.37%26t%3DYSa6C8cXv9V4IlLl-1%26scaling%3Dmin-zoom%26content-scaling%3Dfixed%26starting-point-node-id%3D3%253A34" allowfullscreen></iframe>
 
 No contexto do sistema de irrigação, esse protótipo representa:
 

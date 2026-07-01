@@ -47,9 +47,9 @@ O ESP32 atua como unidade de controle, acionando uma mini bomba DC e disponibili
 
 | Marco | Entrega | Data Limite | Status |
 |:--|:--|:--|:--|
-| **T2-Planejamento** | Escolha do produto e definição da arquitetura | **11/06/2026** | Finalizado |
-| **T2-Relatório** | Descrição, análise técnica e artigos | **01/07/2026** | Finalizado |
-| **T2-Protótipo** | Implementação com ESP32 (Entrega 03) | **11/07/2026** | Pendente |
+| **Planejamento** | Escolha do produto e definição da arquitetura | **11/06/2026** | Finalizado |
+| **Relatório** | Descrição, análise técnica e artigos | **01/07/2026** | Finalizado |
+| **Protótipo** | Implementação com ESP32 (Entrega 03) | **11/07/2026** | Pendente |
 
 ---
 
@@ -89,14 +89,7 @@ O ESP32 atua como unidade de controle, acionando uma mini bomba DC e disponibili
   - [Comparativo com produtos similares](comparativo.md)
   - [Pesquisa bibliográfica](pesquisa-bibliografica.md)
   - [Protótipo de site de telemetria](prototipo-site.md)
-
-- **Arquivos técnicos (Entrega 03)**
-
-  - Diagrama conceitual do sistema (sensores → ESP32 → Telegram/Web)
-  - Esquemático de ligação da bomba e sensores (a definir na implementação)
-  - Código-fonte ESP32 (firmware de controle e web server)
-  - Scripts de integração com Telegram (API bot)
-
+  
 </div>
 
 ---
