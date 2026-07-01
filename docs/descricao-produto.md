@@ -42,7 +42,7 @@ Mais detalhes sobre a arquitetura de hardware e software estão na [Seção 3 �
 - **API REST/JSON**: o ESP32 expõe endpoints (`/api/status`, `/api/history`) que retornam o estado do sistema e o histórico de leituras em formato JSON, consumidos pelo próprio dashboard.
 - **Telegram Bot API**: canal de comunicação remota por mensagens, permitindo consultar status (`/status`), alternar modos de operação (`/modo_auto`, `/modo_manual`) e acionar irrigação manual (`/regar_10s`, `/regar_20s`).
 
-Essas escolhas seguem o padrão observado na literatura de sistemas IoT embarcados para irrigação, que tipicamente combina ESP32, sensoriamento local e protocolos leves como HTTP/MQTT para comunicação com o usuário e com a nuvem (ver [Seção 4 — Pesquisa Bibliográfica](./pesquisa-bibliografica.md)).
+Essas escolhas combinam sensoriamento local e protocolos leves como HTTP para comunicação direta com o usuário, sem dependência de serviços em nuvem (ver [Seção 4 — Pesquisa Bibliográfica](./pesquisa-bibliografica.md)).
 
 ---
 
