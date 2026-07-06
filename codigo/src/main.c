@@ -9,6 +9,8 @@
 #include "button_task.h"
 #include "display_task.h"
 #include "irrigation_task.h"
+#include "telegram_task.h"
+#include "webserver_task.h"
 
 #include "driver/gpio.h"
 #include "driver/i2c.h"
@@ -66,16 +68,12 @@ static void init_i2c_master() {
 void app_main(void) {
     ESP_LOGI(TAG, "Iniciando SmartFlora v%s", FIRMWARE_VERSION);
 
-    // 1. Inicializar Globais e Mutexes/Filas
     init_globals();
 
-    // 2. Inicializar NVS
     ESP_ERROR_CHECK(nvs_storage_init());
 
-    // 3. Inicializar barramento I2C (OLED e BME280 dependem dele)
     init_i2c_master();
 
-    // 4. Checar botão no boot para modo Provisioning (SoftAP)
     gpio_config_t io_conf = {
         .intr_type = GPIO_INTR_DISABLE,
         .mode = GPIO_MODE_INPUT,
@@ -85,29 +83,23 @@ void app_main(void) {
     };
     gpio_config(&io_conf);
     
-    // Pequeno delay para debounce inicial
     vTaskDelay(pdMS_TO_TICKS(100));
     
     bool start_provisioning = false;
-    if (gpio_get_level(BUTTON_PIN) == 0) { // Se botão estiver pressionado no boot
-        ESP_LOGW(TAG, "Botão pressionado no boot. Iniciando modo Provisioning (SoftAP)!");
+    if (gpio_get_level(BUTTON_PIN) == 0) {
+        ESP_LOGW(TAG, "Botao pressionado no boot, entrando em provisioning...");
         start_provisioning = true;
     }
 
-    // 5. Inicializar WiFi (SoftAP ou STA)
     wifi_manager_init(start_provisioning);
 
-    // Se estiver em modo provisioning, parar por aqui.
-    // O ESP vai servir a página e reiniciar ao salvar credenciais.
     if (start_provisioning) {
         while(1) vTaskDelay(pdMS_TO_TICKS(1000)); 
     }
 
-    // 6. Iniciar Tasks do FreeRTOS
-    // Core 0: WiFi, MQTT, Display, Buzzer, Button
-    // Core 1: Sensors, Ultrasonic, Irrigation
-    
     mqtt_manager_init();
+    telegram_task_init();
+    webserver_task_init();
     display_task_init();
     buzzer_task_init();
     button_task_init();
@@ -116,10 +108,8 @@ void app_main(void) {
     ultrasonic_task_init();
     irrigation_task_init();
 
-    // Task principal fica em loop de monitoramento/idle
     while (1) {
         vTaskDelay(pdMS_TO_TICKS(10000));
-        // Pode-se implementar log de memória livre (Heap) aqui
         ESP_LOGI(TAG, "Free heap: %" PRIu32 " bytes", esp_get_free_heap_size());
     }
 }
