@@ -23,7 +23,6 @@ static void wifi_event_handler(void* arg, esp_event_base_t event_base, int32_t e
     }
 }
 
-// ======================= Provisioning HTTP Server =======================
 
 static const char* index_html = 
     "<!DOCTYPE html><html><body>"
@@ -47,7 +46,7 @@ static esp_err_t post_handler(httpd_req_t *req) {
     if ((ret = httpd_req_recv(req, buf, remaining)) <= 0) return ESP_FAIL;
     buf[ret] = '\0';
     
-    // Extrair SSID e Senha do corpo da requisicao: ssid=...&pass=...
+    // Extrair SSID e Senha
     char ssid[32] = {0};
     char pass[64] = {0};
     
@@ -92,7 +91,6 @@ static void start_webserver(void) {
     }
 }
 
-// =========================================================================
 
 void wifi_manager_init(bool start_provisioning) {
     ESP_ERROR_CHECK(esp_netif_init());
@@ -102,7 +100,7 @@ void wifi_manager_init(bool start_provisioning) {
     ESP_ERROR_CHECK(esp_wifi_init(&cfg));
 
     if (start_provisioning) {
-        // SoftAP Mode
+
         esp_netif_create_default_wifi_ap();
         
         wifi_config_t wifi_config = {
@@ -123,7 +121,7 @@ void wifi_manager_init(bool start_provisioning) {
         start_webserver();
         
     } else {
-        // STA Mode
+
         esp_netif_create_default_wifi_sta();
         
         ESP_ERROR_CHECK(esp_event_handler_instance_register(WIFI_EVENT, ESP_EVENT_ANY_ID, &wifi_event_handler, NULL, NULL));
