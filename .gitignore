@@ -4,6 +4,8 @@
 # Production
 /build
 
+config.h
+
 # Generated files
 .docusaurus
 .cache-loader
