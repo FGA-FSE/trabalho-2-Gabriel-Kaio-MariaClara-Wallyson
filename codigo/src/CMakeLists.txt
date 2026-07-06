@@ -9,7 +9,9 @@ idf_component_register(
          "display_task.c"
          "button_task.c"
          "buzzer_task.c"
+         "telegram_task.c"
+         "webserver_task.c"
     INCLUDE_DIRS "."
     REQUIRES driver esp_wifi esp_event esp_netif nvs_flash mqtt
-             esp_http_server esp_timer esp_adc
+             esp_http_server esp_timer esp_adc esp_http_client esp-tls
 )
