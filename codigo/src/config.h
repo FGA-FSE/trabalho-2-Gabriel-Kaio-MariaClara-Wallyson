@@ -2,7 +2,7 @@
 #define CONFIG_H
 
 // ======================== Telegram Bot ========================
-#define TELEGRAM_BOT_TOKEN "8530235399:AAGv_ie0oPZ7U14PyJz8WYe6Gcqng5h0nCI"
+#define TELEGRAM_BOT_TOKEN ""
 #define TELEGRAM_CHAT_ID "" // Opcional, se quiser enviar alertas ativos
 #define TELEGRAM_POLL_INTERVAL_MS 3000
 
@@ -22,8 +22,8 @@
 
 // ======================== WiFi ========================
 // Credenciais padrão (podem ser sobrescritas via NVS)
-#define WIFI_DEFAULT_SSID "GABRIEL"
-#define WIFI_DEFAULT_PASSWORD "O12121618"
+#define WIFI_DEFAULT_SSID ""
+#define WIFI_DEFAULT_PASSWORD ""
 
 // SoftAP para provisioning
 #define SOFTAP_SSID "SmartFlora-Setup"
