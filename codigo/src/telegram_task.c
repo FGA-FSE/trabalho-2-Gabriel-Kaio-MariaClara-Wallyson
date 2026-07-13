@@ -93,7 +93,7 @@ static void telegram_task(void *pvParameters) {
     
     while (1) {
         // Wait for network connection
-        xEventGroupWaitBits(wifi_mqtt_event_group, WIFI_CONNECTED_BIT, pdFALSE, pdTRUE, portMAX_DELAY);
+        xEventGroupWaitBits(wifi_event_group, WIFI_CONNECTED_BIT, pdFALSE, pdTRUE, portMAX_DELAY);
         
         if (strlen(TELEGRAM_BOT_TOKEN) == 0 || strcmp(TELEGRAM_BOT_TOKEN, "SEU_TOKEN_TELEGRAM_AQUI") == 0) {
             vTaskDelay(pdMS_TO_TICKS(10000));

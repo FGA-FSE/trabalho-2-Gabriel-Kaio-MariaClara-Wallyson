@@ -1,7 +1,7 @@
 #include "irrigation_task.h"
 #include "config.h"
 #include "common.h"
-#include "mqtt_manager.h"
+
 #include "buzzer_task.h"
 #include "nvs_storage.h"
 #include "driver/gpio.h"
@@ -21,7 +21,7 @@ static void set_pump(pump_state_t state) {
     int level = (state == PUMP_ON) ? (RELAY_ACTIVE_LOW ? 0 : 1) : (RELAY_ACTIVE_LOW ? 1 : 0);
     gpio_set_level(RELAY_PIN, level);
     
-    mqtt_publish_attributes();
+
 }
 
 static void irrigation_task(void *pvParameters) {
@@ -88,7 +88,7 @@ static void irrigation_task(void *pvParameters) {
                     break;
             }
             xSemaphoreGive(irrigation_state_mutex);
-            mqtt_publish_attributes();
+
         }
 
         // --- State Machine ---

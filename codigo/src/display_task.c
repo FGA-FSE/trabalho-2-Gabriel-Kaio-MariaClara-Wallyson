@@ -95,12 +95,9 @@ static void display_task(void *pvParameters) {
                 snprintf(buf, sizeof(buf), "Limiar: %d%%", is.moisture_threshold);
                 ssd1306_draw_string(0, 34, buf, 1);
 
-                EventBits_t bits = xEventGroupGetBits(wifi_mqtt_event_group);
+                EventBits_t bits = xEventGroupGetBits(wifi_event_group);
                 snprintf(buf, sizeof(buf), "WiFi: %s", (bits & WIFI_CONNECTED_BIT) ? "OK" : "ERR");
                 ssd1306_draw_string(0, 44, buf, 1);
-
-                snprintf(buf, sizeof(buf), "MQTT: %s", (bits & MQTT_CONNECTED_BIT) ? "OK" : "ERR");
-                ssd1306_draw_string(0, 54, buf, 1);
                 break;
             default:
                 break;

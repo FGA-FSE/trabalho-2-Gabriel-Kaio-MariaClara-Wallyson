@@ -2,7 +2,6 @@
 #include "common.h"
 #include "nvs_storage.h"
 #include "wifi_manager.h"
-#include "mqtt_manager.h"
 #include "sensors_task.h"
 #include "ultrasonic_task.h"
 #include "buzzer_task.h"
@@ -25,7 +24,7 @@ SemaphoreHandle_t    sensor_data_mutex;
 SemaphoreHandle_t    irrigation_state_mutex;
 QueueHandle_t        buzzer_queue;
 QueueHandle_t        irrigation_cmd_queue;
-EventGroupHandle_t   wifi_mqtt_event_group;
+EventGroupHandle_t   wifi_event_group;
 
 sensor_data_t        g_sensor_data;
 irrigation_state_t   g_irrigation_state;
@@ -37,7 +36,7 @@ static void init_globals() {
     buzzer_queue = xQueueCreate(10, sizeof(buzzer_cmd_t));
     irrigation_cmd_queue = xQueueCreate(5, sizeof(irrigation_cmd_t));
     
-    wifi_mqtt_event_group = xEventGroupCreate();
+    wifi_event_group = xEventGroupCreate();
 
     // Valores padrão
     g_sensor_data.soil_moisture = 0;
@@ -97,7 +96,6 @@ void app_main(void) {
         while(1) vTaskDelay(pdMS_TO_TICKS(1000)); 
     }
 
-    mqtt_manager_init();
     telegram_task_init();
     webserver_task_init();
     display_task_init();

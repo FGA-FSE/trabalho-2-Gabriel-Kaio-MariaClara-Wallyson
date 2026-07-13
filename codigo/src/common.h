@@ -75,7 +75,6 @@ typedef struct {
 
 // ======================== Event Group Bits ========================
 #define WIFI_CONNECTED_BIT    BIT0
-#define MQTT_CONNECTED_BIT    BIT1
 
 // ======================== Handles Globais ========================
 // Definidos em main.c, extern aqui
@@ -84,7 +83,7 @@ extern SemaphoreHandle_t    sensor_data_mutex;
 extern SemaphoreHandle_t    irrigation_state_mutex;
 extern QueueHandle_t        buzzer_queue;
 extern QueueHandle_t        irrigation_cmd_queue;
-extern EventGroupHandle_t   wifi_mqtt_event_group;
+extern EventGroupHandle_t   wifi_event_group;
 
 extern sensor_data_t        g_sensor_data;
 extern irrigation_state_t   g_irrigation_state;

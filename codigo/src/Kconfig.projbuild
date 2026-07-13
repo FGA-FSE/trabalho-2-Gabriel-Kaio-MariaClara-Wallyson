@@ -1,0 +1,33 @@
+menu "SmartFlora Configuration"
+
+    menu "WiFi Configuration"
+        config WIFI_DEFAULT_SSID
+            string "Default WiFi SSID"
+            default ""
+            help
+                SSID of the default WiFi network to connect to
+
+        config WIFI_DEFAULT_PASSWORD
+            string "Default WiFi Password"
+            default ""
+            help
+                Password of the default WiFi network
+    endmenu
+
+
+
+    menu "Telegram Configuration"
+        config TELEGRAM_BOT_TOKEN
+            string "Telegram Bot Token"
+            default ""
+            help
+                Token for the Telegram Bot
+
+        config TELEGRAM_CHAT_ID
+            string "Telegram Chat ID"
+            default ""
+            help
+                Chat ID for sending Telegram alerts
+    endmenu
+
+endmenu

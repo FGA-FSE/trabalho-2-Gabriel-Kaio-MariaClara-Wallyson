@@ -1,29 +1,21 @@
 #ifndef CONFIG_H
 #define CONFIG_H
+#include "sdkconfig.h"
 
 // ======================== Telegram Bot ========================
-#define TELEGRAM_BOT_TOKEN ""
-#define TELEGRAM_CHAT_ID "" // Opcional, se quiser enviar alertas ativos
+#define TELEGRAM_BOT_TOKEN CONFIG_TELEGRAM_BOT_TOKEN
+#define TELEGRAM_CHAT_ID                                                       \
+  CONFIG_TELEGRAM_CHAT_ID // Opcional, se quiser enviar alertas ativos
 #define TELEGRAM_POLL_INTERVAL_MS 3000
 
-// ======================== Thingsboard MQTT ========================
-#define TB_BROKER_URI "mqtt://tb.fse.lappis.rocks"
-#define TB_BROKER_PORT 1883
-#define TB_ACCESS_TOKEN "SEU_ACCESS_TOKEN_AQUI"
 
-// Tópicos MQTT do Thingsboard
-#define TB_TELEMETRY_TOPIC "v1/devices/me/telemetry"
-#define TB_ATTRIBUTES_TOPIC "v1/devices/me/attributes"
-#define TB_RPC_REQUEST_TOPIC "v1/devices/me/rpc/request/+"
-#define TB_RPC_RESPONSE_TOPIC_FMT "v1/devices/me/rpc/response/%d"
 
-// Intervalo de publicação de telemetria (ms)
-#define MQTT_TELEMETRY_INTERVAL_MS 10000
+
 
 // ======================== WiFi ========================
 // Credenciais padrão (podem ser sobrescritas via NVS)
-#define WIFI_DEFAULT_SSID ""
-#define WIFI_DEFAULT_PASSWORD ""
+#define WIFI_DEFAULT_SSID CONFIG_WIFI_DEFAULT_SSID
+#define WIFI_DEFAULT_PASSWORD CONFIG_WIFI_DEFAULT_PASSWORD
 
 // SoftAP para provisioning
 #define SOFTAP_SSID "SmartFlora-Setup"
@@ -46,10 +38,10 @@
 #define RELAY_PIN GPIO_NUM_26
 
 // Buzzer ativo
-#define BUZZER_PIN GPIO_NUM_25
+#define BUZZER_PIN GPIO_NUM_13
 
 // Botão físico
-#define BUTTON_PIN GPIO_NUM_27
+#define BUTTON_PIN GPIO_NUM_14
 
 // I²C (OLED + BME280)
 #define I2C_SDA_PIN GPIO_NUM_21
