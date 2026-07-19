@@ -91,6 +91,7 @@ O ESP32 atua como unidade de controle, acionando uma mini bomba DC e disponibili
   <img src="https://img.shields.io/badge/Sensores-Umidade%20Solo%20%7C%20DHT11%20%7C%20Boia-orange?style=for-the-badge" alt="Sensores" />
   <img src="https://img.shields.io/badge/Comunicação-Wi--Fi%20%7C%20Telegram%20Bot%20%7C%20HTTP-lightgrey?style=for-the-badge" alt="Comunicação" />
   <img src="https://img.shields.io/badge/Docs-Markdown%20%7C%20Docusaurus-purple?style=for-the-badge" alt="Docs" />
+</div>
 
 # 1. Descrição do Produto
 
@@ -1265,13 +1266,13 @@ A interface foi projetada para resolver quatro necessidades principais:
 O design da interface foi desenvolvido em Figma, com foco em um layout escuro, organizado em **sidebar à esquerda** (navegação entre Dashboard e Configurações) e **conteúdo principal à direita**, como ilustrado nas imagens abaixo:
 
 - Tela "Dashboard – Automático":  
-  ![Dashboard Automático](./images/Página%20inicial%20-%20Automático.png)
+  ![Dashboard Automático](docs/images/Página%20inicial%20-%20Automático.png)
 
 - Tela "Dashboard – Manual":  
-  ![Dashboard Manual](./images/Página%20inicial%20-%20Manual.png)
+  ![Dashboard Manual](docs/images/Página%20inicial%20-%20Manual.png)
 
 - Tela "Configurações":  
-  ![Configurações](./images/Configurações.png)
+  ![Configurações](docs/images/Configurações.png)
 
 A navegação entre os modos **Automático** e **Manual** é feita por um seletor no canto superior direito do dashboard, enquanto a mudança de seção (Dashboard / Configurações) é feita pela barra lateral.
 
@@ -1290,7 +1291,7 @@ No contexto do sistema de irrigação, esse protótipo representa:
 
 ## Guia de Estilo
 
-  ![Style Guide](./images/StyleGuide.png)
+  ![Style Guide](docs/images/StyleGuide.png)
 
 Para garantir a consistência visual e facilitar a posterior implementação do código CSS, o projeto adota um **Design System** simplificado, conforme ilustrado no Guia de Estilo acima. Os principais fundamentos definidos são:
 
