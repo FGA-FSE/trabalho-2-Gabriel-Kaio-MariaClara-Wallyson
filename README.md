@@ -1,21 +1,8 @@
-<div class="hero">
-  <div class="hero-content">
-    <div class="hero-text">
-      <p class="hero-tag">Fundamentos de Sistemas Embarcados • UnB Gama • Trabalho 2 (2026/1)</p>
-      <h1>Controlador de Irrigação Inteligente com ESP32</h1>
-      <p class="hero-description">
-        Estudo teórico e proposta de reprodução de um controlador de irrigação inteligente usando ESP32,
-        sensores de umidade do solo, temperatura/umidade do ar e nível de água, com integração a bot no Telegram
-        e dashboard web de telemetria.
-      </p>
+**Fundamentos de Sistemas Embarcados • UnB Gama • Trabalho 2 (2026/1)**
 
-      <div class="hero-actions">
-        <a class="md-button md-button--primary" href="descricao-produto">Ver descrição do produto</a>
-        <a class="md-button" href="reproducao-esp32">Ver proposta com ESP32</a>
-      </div>
-    </div>
-  </div>
-</div>
+# Controlador de Irrigação Inteligente com ESP32
+
+Estudo teórico e proposta de reprodução de um controlador de irrigação inteligente usando ESP32, sensores de umidade do solo, temperatura/umidade do ar e nível de água, com integração a bot no Telegram e dashboard web de telemetria.
 
 ---
 
@@ -25,7 +12,7 @@ O sistema proposto automatiza a irrigação de uma zona (vaso, jardineira ou peq
 umidade do solo, monitorando também o microclima e o nível do reservatório de água.  
 O ESP32 atua como unidade de controle, acionando uma mini bomba DC e disponibilizando os dados em tempo real via Telegram e interface web.
 
-<div class="grid cards" markdown>
+
 
 - **Automação de irrigação**  
   Acionamento automático da bomba quando o solo está abaixo de um limite configurável.
@@ -38,8 +25,6 @@ O ESP32 atua como unidade de controle, acionando uma mini bomba DC e disponibili
 
 - **Conectividade**  
   ESP32 conectado ao Wi‑Fi, integrando bot no Telegram e dashboard web hospedado no próprio microcontrolador.
-
-</div>
 
 ---
 
@@ -55,7 +40,7 @@ O ESP32 atua como unidade de controle, acionando uma mini bomba DC e disponibili
 
 ## Destaques da Solução
 
-<div class="grid cards" markdown>
+
 
 - **Sensores simples e acessíveis**  
   Sensor capacitivo de umidade do solo, DHT11/DHT22 e boia de nível em PP, todos compatíveis com ESP32.
@@ -69,13 +54,11 @@ O ESP32 atua como unidade de controle, acionando uma mini bomba DC e disponibili
 - **Dashboard Web de Telemetria**  
   Interface web com gráficos de umidade do solo e temperatura/umidade do ar, log de eventos de irrigação e visualização do estado atual do sistema.
 
-</div>
-
 ---
 
 ## Acesso Rápido
 
-<div class="grid cards" markdown>
+
 
 - **Documentação do Trabalho**
 
@@ -89,57 +72,26 @@ O ESP32 atua como unidade de controle, acionando uma mini bomba DC e disponibili
   - [Comparativo com produtos similares](comparativo.md)
   - [Pesquisa bibliográfica](pesquisa-bibliografica.md)
   - [Protótipo de site de telemetria](prototipo-site.md)
-  
-</div>
 
 ---
 
 ## Equipe
 
-<div style={{display: "flex", flexWrap: "wrap", justifyContent: "center", gap: "15px"}}>
-
-  <div class="photo-card">
-    <a href="https://github.com/GabrielSMonteiro" target="_blank">
-      <img src="https://avatars.githubusercontent.com/u/100171830?v=4" />
-      <h4>Gabriel Monteiro<br/><small>Responsável Software / Web</small></h4>
-    </a>
-  </div>
-
-  <div class="photo-card">
-    <a href="https://github.com/bigkaio" target="_blank">
-      <img src="https://avatars.githubusercontent.com/u/121952063?v=4" />
-      <h4>Kaio<br/><small>Pesquisa Bibliográfica</small></h4>
-    </a>
-  </div>
-
-  <div class="photo-card">
-    <a href="https://github.com/alvezclari" target="_blank">
-      <img src="https://avatars.githubusercontent.com/u/145598542?v=4" />
-      <h4>Maria Clara<br/><small>Descrição / Comparativo</small></h4>
-    </a>
-  </div>
-
-  <div class="photo-card">
-    <a href="https://github.com/devwallyson" target="_blank">
-      <img src="https://avatars.githubusercontent.com/u/120031974?v=4" />
-      <h4>Wallyson<br/><small>Análise Técnica</small></h4>
-    </a>
-  </div>
-
-</div>
-
-
+| <a href="https://github.com/GabrielSMonteiro"><img src="https://avatars.githubusercontent.com/u/100171830?v=4" width="100"></a> | <a href="https://github.com/bigkaio"><img src="https://avatars.githubusercontent.com/u/121952063?v=4" width="100"></a> | <a href="https://github.com/alvezclari"><img src="https://avatars.githubusercontent.com/u/145598542?v=4" width="100"></a> | <a href="https://github.com/devwallyson"><img src="https://avatars.githubusercontent.com/u/120031974?v=4" width="100"></a> |
+|:---:|:---:|:---:|:---:|
+| [Gabriel Monteiro](https://github.com/GabrielSMonteiro) | [Kaio](https://github.com/bigkaio) | [Maria Clara](https://github.com/alvezclari) | [Wallyson](https://github.com/devwallyson) |
+| Responsável Software / Web | Pesquisa Bibliográfica | Descrição / Comparativo | Análise Técnica |
 
 ---
 
 ## Tecnologias Utilizadas
 
-<div class="badges">
+<div align="center">
   <img src="https://img.shields.io/badge/Hardware-ESP32-blue?style=for-the-badge" alt="ESP32" />
   <img src="https://img.shields.io/badge/Sensores-Umidade%20Solo%20%7C%20DHT11%20%7C%20Boia-orange?style=for-the-badge" alt="Sensores" />
   <img src="https://img.shields.io/badge/Comunicação-Wi--Fi%20%7C%20Telegram%20Bot%20%7C%20HTTP-lightgrey?style=for-the-badge" alt="Comunicação" />
   <img src="https://img.shields.io/badge/Docs-Markdown%20%7C%20Docusaurus-purple?style=for-the-badge" alt="Docs" />
-</div>
+
 # 1. Descrição do Produto
 
 ## 1.1 Visão geral
@@ -339,7 +291,7 @@ A separação entre os barramentos de potência e sinal minimiza interferências
 
 ## Histórico de Versões
 
-<font size="3"><p style={{textAlign: "left"}}>**Tabela 1** - Histórico de versões.</p></font>
+**Tabela 1** - Histórico de versões.
 
 | Versão | Descrição | Autor(es) | Data |
 | :----: | :-------: | :-------: | :--: |
@@ -543,7 +495,6 @@ Essa proposta, apesar dessas limitações, é compatível com o escopo prático 
 | --- | --- | --- |
 | 0.1 | [Gabriel Monteiro](https://github.com/GabrielSMonteiro) | 24/06/2026 |
 
-</div>
 # Levantamento de Requisitos Funcionais e Não Funcionais
 
 ## 1. Visão Geral da Missão
@@ -772,7 +723,7 @@ graph TD
 
 ## Histórico de Versões
 
-<font size="3"><p style={{textAlign: "left"}}>**Tabela 1** - Histórico de versões.</p></font>
+**Tabela 1** - Histórico de versões.
 
 | Versão | Descrição | Autor(es) | Data |
 | :----: | :-------: | :-------: | :--: |
@@ -855,7 +806,7 @@ Além disso, as normas levantadas se relacionam diretamente com a análise de ri
 
 ## Histórico de Versões
 
-<font size="3"><p style={{textAlign: "left"}}>**Tabela 1** - Histórico de versões.</p></font>
+**Tabela 1** - Histórico de versões.
 
 | Versão | Descrição | Autor(es) | Data |
 | :----: | :-------: | :-------: | :--: |
@@ -1010,7 +961,7 @@ A análise de riscos permite antecipar problemas e orientar o desenvolvimento do
 
 ## Histórico de Versões
 
-<font size="3"><p style={{textAlign: "left"}}>**Tabela 1** - Histórico de versões.</p></font>
+**Tabela 1** - Histórico de versões.
 
 | Versão | Descrição | Autor(es) | Data |
 | :----: | :-------: | :-------: | :--: |
@@ -1326,7 +1277,7 @@ A navegação entre os modos **Automático** e **Manual** é feita por um seleto
 
 O protótipo navegável pode ser acessado pelo seguinte link:
 
-<iframe style={{border: "1px solid rgba(0, 0, 0, 0.1)", display: "block", margin: "0 auto"}} width="100%" height="600" src="https://www.figma.com/embed?embed_host=share&url=https%3A%2F%2Fwww.figma.com%2Fproto%2F2k8TpvARyq0MmV2ibipGOG%2FEmbarcados%3Fpage-id%3D0%253A1%26node-id%3D3-351%26p%3Df%26viewport%3D456%252C468%252C0.37%26t%3DYSa6C8cXv9V4IlLl-1%26scaling%3Dscale-down%26content-scaling%3Dfixed%26starting-point-node-id%3D3%253A34" allowfullscreen></iframe>
+[🔗 Acessar protótipo navegável no Figma](https://www.figma.com/proto/2k8TpvARyq0MmV2ibipGOG/Embarcados)
 
 No contexto do sistema de irrigação, esse protótipo representa:
 
@@ -1554,7 +1505,7 @@ Quando a conexão é restabelecida, os valores voltam a ser preenchidos a partir
 
 ## Histórico de Versões
 
-<font size="3"><p style={{textAlign: "left"}}>**Tabela 1** - Histórico de versões.</p></font>
+**Tabela 1** - Histórico de versões.
 
 | Versão | Descrição | Autor(es) | Data |
 | :----: | :-------: | :-------: | :--: |
