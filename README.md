@@ -80,6 +80,7 @@ O ESP32 atua como unidade de controle, acionando uma mini bomba DC e disponibili
 | <a href="https://github.com/GabrielSMonteiro"><img src="https://avatars.githubusercontent.com/u/100171830?v=4" width="100"></a> | <a href="https://github.com/bigkaio"><img src="https://avatars.githubusercontent.com/u/121952063?v=4" width="100"></a> | <a href="https://github.com/alvezclari"><img src="https://avatars.githubusercontent.com/u/145598542?v=4" width="100"></a> | <a href="https://github.com/devwallyson"><img src="https://avatars.githubusercontent.com/u/120031974?v=4" width="100"></a> |
 |:---:|:---:|:---:|:---:|
 | [Gabriel Monteiro](https://github.com/GabrielSMonteiro) | [Kaio](https://github.com/bigkaio) | [Maria Clara](https://github.com/alvezclari) | [Wallyson](https://github.com/devwallyson) |
+| 221021975 | 222006893 | 221008329 | 222006196 |
 | Responsável Software / Web | Pesquisa Bibliográfica | Descrição / Comparativo | Análise Técnica |
 
 ---
