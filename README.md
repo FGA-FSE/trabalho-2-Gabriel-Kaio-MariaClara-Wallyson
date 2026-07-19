@@ -85,15 +85,6 @@ O ESP32 atua como unidade de controle, acionando uma mini bomba DC e disponibili
 
 ---
 
-## Tecnologias Utilizadas
-
-<div align="center">
-  <img src="https://img.shields.io/badge/Hardware-ESP32-blue?style=for-the-badge" alt="ESP32" />
-  <img src="https://img.shields.io/badge/Sensores-Umidade%20Solo%20%7C%20DHT11%20%7C%20Boia-orange?style=for-the-badge" alt="Sensores" />
-  <img src="https://img.shields.io/badge/Comunicação-Wi--Fi%20%7C%20Telegram%20Bot%20%7C%20HTTP-lightgrey?style=for-the-badge" alt="Comunicação" />
-  <img src="https://img.shields.io/badge/Docs-Markdown%20%7C%20Docusaurus-purple?style=for-the-badge" alt="Docs" />
-</div>
-
 # 1. Descrição do Produto
 
 ## 1.1 Visão geral
